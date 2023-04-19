@@ -22,8 +22,9 @@ const LaunchpadAction = ({item, launchpadDetail}) => {
                     item.status === 'canceled' ? <Canceled item={item}/>:''
                 }
                 {
-                    item.status === 'filled' || 'finished' ? <Finished item={item}/>:''
+                    item.status === 'filled' ? <Finished item={item}/>:''
                 }
+                
             </div>
         </div>
         <div className="p-4 bg-white w-100 h-100 mx-width">
