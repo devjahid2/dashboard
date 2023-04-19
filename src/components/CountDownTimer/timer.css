@@ -1,0 +1,27 @@
+.timer,.days,.hours,.minutes,.seconds{
+    position: relative;
+}
+
+.days,.hours,.minutes,.seconds{
+    position: relative;
+    border: 2px solid #d7d5dd;
+    padding: 15px 20px;
+    color: #9360FF;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.days.end,.hours.end,.minutes.end,.seconds.end{
+    border: 2px solid #d7d5dd;
+    color: #A7A0B6;
+}
+.days .time_indicate,.hours .time_indicate,.minutes .time_indicate,.seconds .time_indicate{
+    position: absolute;
+    bottom: -9px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+font-size: 10px;
+padding: 2px 10px;
+}
