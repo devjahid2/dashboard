@@ -43,6 +43,11 @@ import add_friend from './add_friend.png'
 import thumbs_up from './thumbs_up.png'
 import thumbs_down from './thumbs_down.png'
 import finished from './finished.png'
+import cr_airdrop from './cr_airdrop.png'
+import cr_fair_launch from './cr_fair_launch.png'
+import cr_xl_lock from './cr_xl_lock.png'
+import cr_launchpad from './cr_launchpad.png'
+import cr_private_sale from './cr_private_sale.png'
 
 export const icons = {
   home,
@@ -89,5 +94,10 @@ export const icons = {
   add_friend,
   thumbs_up,
   thumbs_down,
-  finished
+  finished,
+  cr_airdrop,
+  cr_fair_launch,
+  cr_launchpad,
+  cr_private_sale,
+  cr_xl_lock,
 };
