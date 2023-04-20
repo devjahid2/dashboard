@@ -1,0 +1,22 @@
+.verify_token button{
+    width: 160px;
+    padding: 10px 20px;
+    font-size: 13px;
+    background: rgba(147, 96, 255, 0.1);
+    color: #9360FF;
+}
+input[type='radio'] {
+    accent-color: #9360FF;
+}
+.single_input input[type='radio']{
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+.single_input{
+    display: flex;
+    align-items: center;
+}
+.verify_token label,.verify_token input{
+    font-size: 12px;
+}

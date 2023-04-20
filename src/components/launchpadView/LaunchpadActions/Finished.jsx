@@ -1,11 +1,11 @@
-import React from 'react';
-import { icons } from '../../../assets/icons/icon';
-import ProgressBar from '../../progress/ProgressBar';
+import React from "react";
+import { icons } from "../../../assets/icons/icon";
+import ProgressBar from "../../progress/ProgressBar";
 
-const Finished = ({item}) => {
-    return (
-        <>
-            <img src={icons.finished} alt="" />
+const Finished = ({ item }) => {
+  return (
+    <>
+      <img src={icons.finished} alt="" />
       <p className="font-14">This pool has canceled</p>
       <div className="mt-3">
         <ProgressBar progress={item.progress} />
@@ -20,8 +20,8 @@ const Finished = ({item}) => {
           </p>
         </div>
       </div>
-        </>
-    );
-}
+    </>
+  );
+};
 
 export default Finished;

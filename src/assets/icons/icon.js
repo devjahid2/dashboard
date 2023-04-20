@@ -48,6 +48,8 @@ import cr_fair_launch from './cr_fair_launch.png'
 import cr_xl_lock from './cr_xl_lock.png'
 import cr_launchpad from './cr_launchpad.png'
 import cr_private_sale from './cr_private_sale.png'
+import info_empty from './info-empty.png'
+import refresh from './refresh.png'
 
 export const icons = {
   home,
@@ -100,4 +102,6 @@ export const icons = {
   cr_launchpad,
   cr_private_sale,
   cr_xl_lock,
+  info_empty,
+  refresh
 };

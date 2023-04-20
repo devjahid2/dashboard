@@ -1,0 +1,63 @@
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: #d7d5dd;
+}
+.line.opacity-0 {
+  opacity: 0;
+}
+.line.finished {
+  background-color: #ef4af0;
+}
+.number.finished{
+    background-color: #ef4af0;
+    color: #fff;
+}
+.number {
+  color: #a7a0b6;
+  font-size: 13px;
+  font-weight: 600;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 2.12866px 10.0172px rgba(22, 6, 172, 0.02),
+    0px 1.13052px 5.32008px rgba(22, 6, 172, 0.0161557),
+    0px 0.470434px 2.21381px rgba(22, 6, 172, 0.0112458);
+  border-radius: 50%;
+  padding-top: 6px;
+}
+.multi_form p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+.multi_form {
+  display: flex;
+  overflow-x: scroll;
+  flex-flow: row wrap;
+}
+.multi_form::-webkit-scrollbar {
+  display: none !important;
+}
+
+.multi_form {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.multi_form_actions p{
+     background: rgba(96, 159, 255, 0.1);
+     padding: 14px;
+     color: #706781;
+     font-weight: 600;
+font-size: 12px;
+}
+.multi_form_actions button{
+    padding:14px 20px;
+    border: 2px solid #9360ff;
+}
+.multi_form_actions button.disabled{
+    color:#9360FF;
+    background-color: #E6E6E6;
+    border: 2px solid #e9e3f5;
+}
