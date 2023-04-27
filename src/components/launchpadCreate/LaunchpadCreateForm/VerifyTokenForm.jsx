@@ -2,8 +2,8 @@ import React from "react";
 import TokenAddress from "./../../CreateForm/TokenAddress";
 import Currency from "../../CreateForm/Currency";
 import FreeOptions from "./../../CreateForm/FreeOptions";
-import ListingOptions from "./../../CreateForm/ListingOptions";
 import Affiliate from "./../../CreateForm/Affiliate";
+import Radio2Options from "../../CreateForm/Radio2Options";
 
 const VerifyTokenForm = () => {
   
@@ -12,7 +12,7 @@ const VerifyTokenForm = () => {
       <TokenAddress />
       <Currency eth={true} usdt={true} usdc={true} busd={true} />
       <FreeOptions />
-      <ListingOptions />
+      <Radio2Options optionsOne={'Auto'} optionsTwo={'Manual'} title={'Listing options'} />
       <Affiliate />
     </div>
   );

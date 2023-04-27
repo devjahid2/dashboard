@@ -1,7 +1,7 @@
 import React from 'react';
 import InputOnly from '../form/InputOnly';
 
-const TitleInput = ({placeholder,value,title,subtitle,btn}) => {
+const TitleInput = ({placeholder,defaultValue,title,subtitle,btn,text}) => {
     return (
         <div className="d-md-flex align-items-center justify-content-between mb-4">
       <div className="label-text w-35">
@@ -11,10 +11,13 @@ const TitleInput = ({placeholder,value,title,subtitle,btn}) => {
       <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-2 w-100">
         <InputOnly
           placeholder={placeholder}
-          defaultValue={value}
+          defaultValue={defaultValue}
         />
         {
             btn ? <button>Create token</button> : ''
+        }
+        {
+          text ? <p className='font-11 mx-300'>{text}</p> : <p className='mx-300'></p>
         }
       </div>
     </div>

@@ -192,3 +192,7 @@ a.text-end{
   top: 0;
   left:0
 }
+.mx-300{
+  width: 300px;
+  max-width: 300px;
+}

@@ -13,7 +13,9 @@ const TokenAddress = () => {
           placeholder={"Token Address"}
           defaultValue={"0xDfaAe46eE412395dB23e844B21f7C8A1f55B7012"}
         />
+        <div className="mx-300">
         <button>Create token</button>
+        </div>
       </div>
     </div>
   );

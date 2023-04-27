@@ -1,6 +1,7 @@
 import React from 'react';
 import MultiStepForm from '../multiStepForm/MultiStepForm';
 import VerifyTokenForm from './LaunchpadCreateForm/VerifyTokenForm';
+import DefiFairLaunch from './LaunchpadCreateForm/DefiFairLaunch';
 
 const LaunchpadCreateBody = () => {
     const stepData = [
@@ -13,7 +14,7 @@ const LaunchpadCreateBody = () => {
         <div className='mt-3'>
             <MultiStepForm bottomText={'For auto listing, after you finalize the pool your token will be auto listed on DEX'} step={stepData}>
                 <VerifyTokenForm/>
-                <div className="content py-4"><h2>DeFI FairLaunch Info</h2></div>
+                <DefiFairLaunch/>
                 <div className="content py-4"><h2>Add Additional Info</h2></div>
                 <div className="content py-4"><h2>Finish</h2></div>
             </MultiStepForm>

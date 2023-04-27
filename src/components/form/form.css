@@ -100,3 +100,6 @@ input.only{
     color: #A7A0B6;
     font-size: 16px;
 }
+.w-70 input{
+    width: 70%;
+}

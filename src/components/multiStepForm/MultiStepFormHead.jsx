@@ -9,7 +9,7 @@ const MultiStepFormHead = ({ presentStep,  step }) => {
           return (
             <div key={index}>
               <div className="d-flex align-items-center">
-              <div className={`line ${index === 0 ? 'opacity-0':''} ${presentStep.find((i) => {return i == index+1}) ? 'finished' : ''} ${nextStep == index+1 ? 'finished':''}`}></div>
+              <div className={`line ${index === 0 ? 'opacity-0':''} ${presentStep.find((i) => {return i == index+1}) ? 'finished' : ''} `}></div>
                 <div className={`${presentStep.find((i) => {return i == index+1}) ? 'finished' : ''} number`}>{index + 1}</div>
                 <div className={`line ${index+1 == step.length ? 'opacity-0':''} ${presentStep.find((i) => {return i == index+1}) ? 'finished' : ''}`}></div>
               </div>
