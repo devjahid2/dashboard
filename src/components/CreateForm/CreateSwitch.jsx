@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import SwitchButton from "../form/SwitchButton";
 
-const Affiliate = () => {
+const CreateSwitch = ({title,label}) => {
   const [filterOption, setFilterOption] = useState(false);
   return (
     <>
       <div className="d-md-flex align-items-center justify-content-between mb-4">
         <div className="label-text w-35">
-          <h6 className="font-12">Affiliate Program</h6>
+          <h6 className="font-12">{title}</h6>
         </div>
         <div className="d-flex align-items-center gap-4 w-100">
           <div
@@ -17,7 +17,7 @@ const Affiliate = () => {
             }`}
           >
             <SwitchButton />
-            <p className="font-12">Enabled</p>
+            <p className="font-12">{label}</p>
           </div>
         </div>
       </div>
@@ -25,4 +25,4 @@ const Affiliate = () => {
   );
 };
 
-export default Affiliate;
+export default CreateSwitch;

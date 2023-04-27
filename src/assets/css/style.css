@@ -82,7 +82,8 @@ button{
 }
 /* #EBECF0 */
 .w-35{
-  width: 35%;
+  width: 25%;
+  min-width:25%
 }
 .w-40{
   width: 40%;
@@ -193,6 +194,7 @@ a.text-end{
   left:0
 }
 .mx-300{
-  width: 300px;
-  max-width: 300px;
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
 }

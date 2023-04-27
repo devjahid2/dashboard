@@ -8,7 +8,7 @@ const TitleInput = ({placeholder,defaultValue,title,subtitle,btn,text}) => {
         <h6 className="font-12">{title}</h6>
         <p className="font-11">{subtitle}</p>
       </div>
-      <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-2 w-100">
+      <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center w-100">
         <InputOnly
           placeholder={placeholder}
           defaultValue={defaultValue}
@@ -17,7 +17,7 @@ const TitleInput = ({placeholder,defaultValue,title,subtitle,btn,text}) => {
             btn ? <button>Create token</button> : ''
         }
         {
-          text ? <p className='font-11 mx-300'>{text}</p> : <p className='mx-300'></p>
+          text ? <p className='font-11 mx-300 ps-2'>{text}</p> : <p className='mx-300 ps-2'></p>
         }
       </div>
     </div>

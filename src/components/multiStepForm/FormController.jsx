@@ -24,11 +24,11 @@ const FormController = ({
         <hr />
       </div>
       <div className="multi_form_actions content">
-        <div className={`d-flex flex-column flex-md-row align-items-center ${bottomText ? 'justify-content-between':'justify-content-end'}`}>
-          {bottomText ? (
+        <div className={`d-flex flex-column flex-md-row align-items-center ${bottomText[presentStep.length - 1] ? 'justify-content-between':'justify-content-end'}`}>
+          {bottomText[presentStep.length - 1] ? (
             <p className="w-md-max-100 text-md-start text-center">
               <img className="me-2" src={icons.info_empty} alt="info" />
-              {bottomText}
+              {bottomText[presentStep.length - 1]}
             </p>
           ) : (
             ""

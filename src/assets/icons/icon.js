@@ -36,20 +36,29 @@ import filter_icon from "./filter.png";
 import global from "./globe.png";
 import play from "./play.png";
 import cancel from "./cancel.png";
-import mail from './mail.png'
-import comment from './comment.png'
-import profile from './profile.png'
-import add_friend from './add_friend.png'
-import thumbs_up from './thumbs_up.png'
-import thumbs_down from './thumbs_down.png'
-import finished from './finished.png'
-import cr_airdrop from './cr_airdrop.png'
-import cr_fair_launch from './cr_fair_launch.png'
-import cr_xl_lock from './cr_xl_lock.png'
-import cr_launchpad from './cr_launchpad.png'
-import cr_private_sale from './cr_private_sale.png'
-import info_empty from './info-empty.png'
-import refresh from './refresh.png'
+import mail from "./mail.png";
+import comment from "./comment.png";
+import profile from "./profile.png";
+import add_friend from "./add_friend.png";
+import thumbs_up from "./thumbs_up.png";
+import thumbs_down from "./thumbs_down.png";
+import finished from "./finished.png";
+import cr_airdrop from "./cr_airdrop.png";
+import cr_fair_launch from "./cr_fair_launch.png";
+import cr_xl_lock from "./cr_xl_lock.png";
+import cr_launchpad from "./cr_launchpad.png";
+import cr_private_sale from "./cr_private_sale.png";
+import info_empty from "./info-empty.png";
+import refresh from "./refresh.png";
+import dash from "./dash.png";
+import meta_mask from "./MetaMask.png";
+import coinbase from "./CoinbaseWallet.png";
+import wallet_connect from "./WalletConnect.png";
+import trust_wallet from "./TrustWallet.png";
+import safepal from "./Safepal.png";
+import math_wallet from "./MathWallet.png";
+import token_pocket from "./TokenPocket .png";
+import bitkeep from "./Bitkeep.png";
 
 export const icons = {
   home,
@@ -103,5 +112,14 @@ export const icons = {
   cr_private_sale,
   cr_xl_lock,
   info_empty,
-  refresh
+  refresh,
+  dash,
+  meta_mask,
+  coinbase,
+  wallet_connect,
+  trust_wallet,
+  safepal,
+  math_wallet,
+  token_pocket,
+  bitkeep,
 };

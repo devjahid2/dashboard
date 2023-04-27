@@ -1,0 +1,11 @@
+.w_modal{
+    position: fixed;
+    max-width: 500px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    background-color: #F3F2F4;
+    transform: translate(-50%);
+    z-index: 100;
+    padding: 10px;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import MultiStepForm from '../multiStepForm/MultiStepForm';
 import VerifyTokenForm from './LaunchpadCreateForm/VerifyTokenForm';
 import DefiFairLaunch from './LaunchpadCreateForm/DefiFairLaunch';
+import AdditionalInfo from './LaunchpadCreateForm/AdditionalInfo';
 
 const LaunchpadCreateBody = () => {
     const stepData = [
@@ -10,12 +11,16 @@ const LaunchpadCreateBody = () => {
         {name:'Add Additional Info'},
         {name:'Finish'}
     ]
+    const bottomText = [
+        'For auto listing, after you finalize the pool your token will be auto listed on DEX',
+        'Need 0 Token Name to create launchpad'
+    ]
     return (
-        <div className='mt-3'>
-            <MultiStepForm bottomText={'For auto listing, after you finalize the pool your token will be auto listed on DEX'} step={stepData}>
+        <div className='my-3'>
+            <MultiStepForm bottomText={bottomText} step={stepData}>
                 <VerifyTokenForm/>
                 <DefiFairLaunch/>
-                <div className="content py-4"><h2>Add Additional Info</h2></div>
+                <AdditionalInfo/>
                 <div className="content py-4"><h2>Finish</h2></div>
             </MultiStepForm>
         </div>

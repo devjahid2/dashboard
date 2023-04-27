@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { icons } from './../../assets/icons/icon';
 import useWindowWidth from '../../hooks/useWindowWidth';
+import WalletModal from '../walletModal/WalletModal';
 
 const Wallet = ({border}) => {
     const onSmallScreen = useWindowWidth(767);
+    const [open,setOpen] = useState(false)
+    const handelWallet = () => {
+        setOpen(true)
+    }
     return (
-        <div className={`d-flex align-items-center gap-3 bg-white pointer-event p-16 p-xy-16 ${border ? 'border-left' : ''}`}>
+        <>
+            <div onClick={handelWallet} className={`d-flex align-items-center gap-3 bg-white pointer-event p-16 p-xy-16 ${border ? 'border-left' : ''}`}>
             <img src={icons.wallet} alt="wallet" />
             {
                 onSmallScreen ? '' : <div>
@@ -15,6 +21,8 @@ const Wallet = ({border}) => {
             }
             <img src={icons.down_arrow} alt="down arrow" />
         </div>
+        {open ? <WalletModal isOpen={open} setIsOpen={setOpen}/> : ''}
+        </>
     );
 }
 

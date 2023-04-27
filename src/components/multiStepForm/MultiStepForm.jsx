@@ -4,7 +4,7 @@ import MultiStepFormHead from './MultiStepFormHead';
 import FormController from './FormController';
 
 const MultiStepForm = ({children,step,bottomText}) => {
-    const [presentStep,setPresentStep] = useState([1])
+    const [presentStep,setPresentStep] = useState([1]) // 1,2,3,4....n
     return (
         <>
          <MultiStepFormHead presentStep={presentStep}  step={step}/>

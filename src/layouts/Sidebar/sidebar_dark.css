@@ -37,4 +37,8 @@ body.dark .left_side_bar li.active a{
   body.dark .theme img.active {
     background-color: #37353B;
   }
-  
+  body.dark .amount h4,
+  body.dark p,
+  body.dark .font-12{
+  color: #F3F2F5;
+}

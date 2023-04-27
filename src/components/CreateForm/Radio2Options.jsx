@@ -13,10 +13,12 @@ const Radio2Options = ({optionsOne,optionsTwo,title,subTitle}) => {
             <input defaultChecked type="radio" name="option" id="optionsOne" />
             <label htmlFor="optionsOne">{optionsOne}</label>
           </div>
-          <div className="single_input">
+          {
+            optionsTwo ? <div className="single_input">
             <input type="radio" name="option" id="optionsTwo" />
             <label htmlFor="optionsTwo">{optionsTwo}</label>
-          </div>
+          </div> : ''
+          }
         </div>
       </div>
     </>
