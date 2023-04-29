@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 767.98px) {
-  .header .font-18 {
+  .header .d-res-none {
     display: none;
   }
   .p-xy-16 {

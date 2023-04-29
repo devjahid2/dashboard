@@ -59,7 +59,8 @@ import safepal from "./Safepal.png";
 import math_wallet from "./MathWallet.png";
 import token_pocket from "./TokenPocket .png";
 import bitkeep from "./Bitkeep.png";
-
+import continue_wallet from './continue_wallet.png'
+import wallet_loading from './wallet_loading.png'
 export const icons = {
   home,
   airdrop,
@@ -122,4 +123,6 @@ export const icons = {
   math_wallet,
   token_pocket,
   bitkeep,
+  continue_wallet,
+  wallet_loading
 };

@@ -3,6 +3,7 @@ import MultiStepForm from '../multiStepForm/MultiStepForm';
 import VerifyTokenForm from './LaunchpadCreateForm/VerifyTokenForm';
 import DefiFairLaunch from './LaunchpadCreateForm/DefiFairLaunch';
 import AdditionalInfo from './LaunchpadCreateForm/AdditionalInfo';
+import Finish from './LaunchpadCreateForm/Finish';
 
 const LaunchpadCreateBody = () => {
     const stepData = [
@@ -21,7 +22,7 @@ const LaunchpadCreateBody = () => {
                 <VerifyTokenForm/>
                 <DefiFairLaunch/>
                 <AdditionalInfo/>
-                <div className="content py-4"><h2>Finish</h2></div>
+                <Finish/>
             </MultiStepForm>
         </div>
     );

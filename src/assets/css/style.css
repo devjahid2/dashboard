@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap");
+:root{
+  --main-text-color: #44414C;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'IBM Plex Sans', sans-serif;
   color:#44414C
+}
+body{
+  position: relative;
 }
 .light {
   background-color: #f3f2f4;
@@ -87,6 +94,9 @@ button{
 }
 .w-40{
   width: 40%;
+}
+.w-49{
+  width: 49%;
 }
 .last-item-no-border:last-child{
   border-bottom: none !important;
@@ -197,4 +207,29 @@ a.text-end{
   width: 250px;
   max-width: 250px;
   min-width: 250px;
+}
+
+.xcel-btn{
+  padding: 15px 30px;
+  width: 100%;
+}
+.btn-border{
+ border: 1px solid #e9e3f5;
+ background-color: transparent;
+ color: #9360FF;
+}
+
+.spinner{
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }

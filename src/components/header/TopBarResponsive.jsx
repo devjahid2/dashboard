@@ -17,7 +17,7 @@ const TopBarResponsive = () => {
         <img className='pointer-event' onClick={() => setContext({...context,navBarOpen:true})} src={icons.menu_icon} alt="menu icon" />
         <Link to="/" className="logo d-flex align-items-center gap-2 pt-0">
                 <img className="rounded" src={images.logo} alt="" />
-                <h2 className="font-18">Xcel Pad</h2>
+                <h2 className="font-18 d-res-none">Xcel Pad</h2>
             </Link>
       </div>
       <div className="d-flex align-items-center">
