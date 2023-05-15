@@ -7,6 +7,7 @@ const FormController = ({
   bottomText,
   step,
   setPresentStep,
+  handler
 }) => {
   const handelNext = () => {
     setPresentStep((prevData) => [...prevData, presentStep.length + 1]);
@@ -24,7 +25,7 @@ const FormController = ({
         <hr />
       </div>
       <div className="multi_form_actions content">
-        <div className={`d-flex flex-column flex-md-row align-items-center ${bottomText[presentStep.length - 1] ? 'justify-content-between':'justify-content-end'}`}>
+        <div className={`d-flex flex-column flex-md-row gap-2 align-items-center ${bottomText[presentStep.length - 1] ? 'justify-content-between':'justify-content-end'}`}>
           {bottomText[presentStep.length - 1] ? (
             <p className="w-md-max-100 text-md-start text-center">
               <img className="me-2" src={icons.info_empty} alt="info" />
@@ -44,7 +45,7 @@ const FormController = ({
 
             
             {
-              step.length == presentStep.length ? <button className="w-100" onClick={() => alert('Form Submitted !')}>Finish</button> : <button className="w-100" onClick={handelNext}>Next</button>
+              step.length == presentStep.length ? <button className="w-100" onClick={handler}>Finish</button> : <button className="w-100" onClick={handelNext}>Next</button>
             }
           </div>
         </div>

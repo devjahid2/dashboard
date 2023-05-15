@@ -1,42 +1,33 @@
-import React, { useState } from 'react';
-import FinishInfo from './FinishInfo';
-import SwitchButton from '../../form/SwitchButton';
+import React from 'react';
+import FinishInfo from './../../launchpadCreate/LaunchpadCreateForm/FinishInfo';
 
 const Finish = () => {
-    const [filterOption,setFilterOption] = useState(false)
     return (
         <div className='my-4 content radius-0 border-0'>
-
             <div className="d-md-flex align-items-start bg-white p-3 mb-3">
                 <div className="w-40">
-                    <h4 className='text-uppercase font-16 mb-3'>Token info</h4>
+                    <h4 className='text-uppercase font-16 mb-3'>Private sale info</h4>
                 </div>
                 <div className='w-100'>
-                <FinishInfo title={'Total Token'} value={'321,600 Token Name'}/>
-                <FinishInfo title={'Factory Address'} value={'0xDfaAe46eE412395dB23e844B21f7C8A1f55B7012'}/>
-                <FinishInfo title={'Token Name'} value={'Token Name'}/>
-                <FinishInfo title={'Token Symbol'} value={'TKN'}/>
-                <FinishInfo noBorder={true} title={'Token Decimals'} value={'18'}/>
+                <FinishInfo title={'Title'} value={'Icon.oi'}/>
+                <FinishInfo noBorder={true} title={'Sale Type'} value={'Public'}/>
                 </div>
             </div>
 
             <div className="d-md-flex align-items-start bg-white p-3 mb-3">
                 <div className="w-40">
-                    <h4 className='text-uppercase font-16 mb-3'>Presale info</h4>
+                    <h4 className='text-uppercase font-16 mb-3'>Details</h4>
                 </div>
                 <div className='w-100'>
-                <FinishInfo title={'Presale Rate'} value={'200 Token Name '}/>
-                <FinishInfo title={'Listing Rate'} value={'150 Token Name '}/>
-                <FinishInfo title={'Sale Method'} value={'Public'}/>
                 <FinishInfo title={'SoftCap (ETH)'} value={'500'}/>
                 <FinishInfo title={'HardCap (ETH)'} value={'1000'}/>
-                <FinishInfo title={'Unsold Tokens'} value={'Burn'}/>
                 <FinishInfo title={'Minimum buy'} value={'0.01 ETH'}/>
                 <FinishInfo title={'Maximum buy'} value={'0.1 ETH'}/>
-                <FinishInfo title={'Liquidity Percent (%)'} value={'80'}/>
+                <FinishInfo title={'Fund TGE'} value={'22%'}/>
+                <FinishInfo title={'Fund Cycle'} value={'2 Days'}/>
+                <FinishInfo title={'Fund Release Each Cycle'} value={'2%'}/>
                 <FinishInfo title={'Start time'} value={'2023-03-13T13:00 (UTC)'}/>
-                <FinishInfo title={'End time'} value={'2023-03-28T13:00 (UTC)'}/>
-                <FinishInfo noBorder={true} title={'Liquidity Lock Time (minutes)'} value={'365'}/>
+                <FinishInfo noBorder={true} title={'End time'} value={'2023-03-28T13:00 (UTC)'}/>
                 </div>
             </div>
 
@@ -56,20 +47,6 @@ const Finish = () => {
                 <FinishInfo noBorder={true} title={'Reddit'} value={'https://site.com'}/>
                 </div>
             </div>
-
-            <div className="d-flex gap-5">
-            <p className="font-12">Vesting Contributor</p>
-            <div
-            onClick={() => setFilterOption(!filterOption)}
-            className={`advanced_filter pointer-event d-flex align-items-center gap-2  ${
-              filterOption ? "active" : ""
-            }`}
-          >
-            <SwitchButton />
-            <p className="font-12">Enable</p>
-          </div>
-            </div>
-
         </div>
     );
 }

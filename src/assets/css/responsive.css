@@ -98,6 +98,9 @@ width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .w-35,.w-40{
+    width:100%
+  }
 
 }
 @media (max-width: 400px) {

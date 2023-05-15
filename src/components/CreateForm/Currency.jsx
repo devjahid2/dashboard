@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { icons } from "../../assets/icons/icon";
 
-const Currency = ({eth, busd, usdt, usdc}) => {
+const Currency = ({eth, busd, usdt, usdc,updatingObject,data,setData}) => {
+  // const [currency,setCurrency] = useState(eth ? 'eth' : '');
+  // useEffect(() => {
+  //   setData({...data,[updatingObject]:{...data[updatingObject],currency: currency}});
+  // },[])
+  const handler = (e) => {
+    const value = e.target.value;
+    // setCurrency(value)
+    setData({...data,[updatingObject]:{...data[updatingObject],currency: value}});
+  }
+
   return (
     <>
       <div className="d-md-flex align-items-center justify-content-between mb-4">
@@ -18,7 +28,7 @@ const Currency = ({eth, busd, usdt, usdc}) => {
         <div className="d-flex align-items-md-center  gap-3 w-100 flex-column flex-md-row align-items-start">
           {eth ? (
             <div className="single_input">
-              <input defaultChecked type="radio" name="currency" id="eth" />
+              <input value={'eth'} onChange={(e) => handler(e)}  type="radio" name="currency" id="eth" />
               <label htmlFor="eth">ETH</label>
             </div>
           ) : (
@@ -26,7 +36,7 @@ const Currency = ({eth, busd, usdt, usdc}) => {
           )}
           {busd ? (
             <div className="single_input">
-              <input type="radio" name="currency" id="BUSD" />
+              <input value={'busd'} onChange={(e) => handler(e)} type="radio" name="currency" id="BUSD" />
               <label htmlFor="BUSD">BUSD</label>
             </div>
           ) : (
@@ -34,7 +44,7 @@ const Currency = ({eth, busd, usdt, usdc}) => {
           )}
           {usdt ? (
             <div className="single_input">
-              <input type="radio" name="currency" id="USDT" />
+              <input value={'usdt'} onChange={(e) => handler(e)} type="radio" name="currency" id="USDT" />
               <label htmlFor="USDT">USDT</label>
             </div>
           ) : (
@@ -42,7 +52,7 @@ const Currency = ({eth, busd, usdt, usdc}) => {
           )}
           {usdc ? (
             <div className="single_input">
-              <input type="radio" name="currency" id="USDC" />
+              <input value={'usdc'} onChange={(e) => handler(e)} type="radio" name="currency" id="USDC" />
               <label htmlFor="USDC">USDC</label>
             </div>
           ) : (
