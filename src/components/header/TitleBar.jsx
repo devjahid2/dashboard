@@ -9,14 +9,14 @@ const options = [
     { value: 'private_sale', label: 'Private Sale' }
   ]
 
-const TitleBar = () => {
+const TitleBar = ({title}) => {
     const [filter,setFilter] = useState('all')
     const onSmallScreenMobile = useWindowWidth(767);
 
     
     return (
         <div className={`content ${onSmallScreenMobile ? 'pb-3 ' : 'd-flex align-items-center gap-2'}`}>
-            <h2 className='title mr-20'>Launchpads</h2>
+            <h2 className='title mr-20'>{title ? title : 'Launchpads'}</h2>
             {
                 onSmallScreenMobile ? <div className='d-flex align-items-center gap-2 select-type pt-2'>
                     <SelectInput options={options} placeholder={'Select'}/>

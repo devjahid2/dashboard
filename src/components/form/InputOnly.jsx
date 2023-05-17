@@ -10,7 +10,9 @@ const InputOnly = ({defaultValue,placeholder,data,setData,name,updatingObject}) 
         setData({...data,[updatingObject]:{...data[updatingObject],[name]: e.target.value}});
     }
     return (
-        <input  name={name} onChange={(e) => handelValue(e)} defaultValue={ data[updatingObject][name]|| ''} className='only' type="text" placeholder={placeholder} />
+        <>
+          {  data && setData && updatingObject ? <input  name={name} onChange={(e) => handelValue(e)} defaultValue={ data[updatingObject][name]|| ''} className='only' type="text" placeholder={placeholder} /> : <input  name={name} defaultValue={ defaultValue } className='only' type="text" placeholder={placeholder} />}
+        </>
     );
 }
 

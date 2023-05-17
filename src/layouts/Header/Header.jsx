@@ -10,7 +10,7 @@ import TopBarResponsive from '../../components/header/TopBarResponsive';
 import Navigation from '../../components/header/Navigation';
 
 
-const Header = () => {
+const Header = ({title,route,middle,homeText,showFilter,filterMenuProp}) => {
     const onSmallScreen = useWindowWidth(1200);
     const onSmallScreenMobile = useWindowWidth(767);
     // console.log(onSmallScreen)
@@ -19,12 +19,12 @@ const Header = () => {
             { onSmallScreen ? 
                <>
                <TopBarResponsive/> 
-               <Navigation route={'Launchpad'}/>
-               </> : <TopBar/>
+               <Navigation middle={middle} homeText={homeText} route={route ? route : 'Launchpad'}/>
+               </> : <TopBar route={route} homeText={homeText} middle={middle}/>
             }
-            <TitleBar/>
+            <TitleBar title={title}/>
             {
-                onSmallScreenMobile ? '' : <FilterMenu/>
+                onSmallScreenMobile ? '' : <FilterMenu filterMenuProp={filterMenuProp} showFilter={showFilter}/>
             }
         </div>
     );

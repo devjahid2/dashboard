@@ -7,12 +7,11 @@ import Finish from './CreateForm/Finish';
 
 const PrivateSaleCreateBody = () => {
     const [data,setData] = useState({
-        beforeStart : {
-            title:'',
-            currency:''
-        },
+        beforeStart : {},
         privateSale:{},
-        additionalInfo:{},
+        additionalInfo:{
+            description:''
+        },
     });
 
     const stepData = [
@@ -30,7 +29,7 @@ const PrivateSaleCreateBody = () => {
     
 
     const handler = () => {
-        console.log(data)
+        window.location.href = '/private-sale/view'
     }
     return (
         <div className='my-3'>

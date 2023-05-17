@@ -1,9 +1,15 @@
 import React from 'react';
 import FinishInfo from './../../launchpadCreate/LaunchpadCreateForm/FinishInfo';
+import { icons } from '../../../assets/icons/icon';
 
-const Finish = () => {
+const Finish = ({data}) => {
+    
     return (
         <div className='my-4 content radius-0 border-0'>
+            { data.additionalInfo.description.length < 128 ? <div className='d-flex align-items-center gap-2 warn_wrap mb-3'>
+            <img src={icons.warning}/>
+                <p className="warn_text">Cannot submit by following the errors. Description must be 128 characters or more</p>
+            </div> : ''}
             <div className="d-md-flex align-items-start bg-white p-3 mb-3">
                 <div className="w-40">
                     <h4 className='text-uppercase font-16 mb-3'>Private sale info</h4>

@@ -5,7 +5,7 @@ import PrivateSaleCreateBody from '../../components/PrivateSaleCreate/PrivateSal
 const PrivateSaleCreate = () => {
     return (
         <>
-            <CreatePageHeader title={'Create a Private Sale'} route={'Create a Private Sale'}/>
+            <CreatePageHeader middle={'Private Sale'} title={'Create a Private Sale'} route={'Create a Private Sale'}/>
             <PrivateSaleCreateBody/>
         </>
     );

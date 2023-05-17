@@ -1,10 +1,13 @@
 import React from 'react';
+import CreatePageHeader from '../CreatePageHeader/CreatePageHeader';
+import XlLockCreateBody from '../../components/XLLockCreate/XlLockCreateBody';
 
 const XlLockCreate = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+           <CreatePageHeader middle={'XL-Lock'} title={'Create Lock'} route={'Create Lock'}/> 
+           <XlLockCreateBody/>
+        </>
     );
 }
 

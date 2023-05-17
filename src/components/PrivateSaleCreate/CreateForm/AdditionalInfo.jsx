@@ -17,8 +17,8 @@ const AdditionalInfo = ({data,setData,updatingObject}) => {
         <div className='my-4 content radius-0 border-0'>
             <TitleInput data={data} setData={setData} updatingObject={updatingObject} name={'logo'} title={'Logo*'} placeholder={'Ex: https://'} subtitle={'URL must end with a supported image extension png, jpg, jpeg or gif. '}/>
             <TitleInput data={data} setData={setData} updatingObject={updatingObject} name={'website'} title={'Website*'} placeholder={'Ex: https://'}/>
-            <CreateDescription title={'Description*'} placeholder={'Tell something about you'}/>
-            <CreateSelect title={'Add Social Media'} options={socialMedia}/>
+            <CreateDescription data={data} setData={setData} updatingObject={updatingObject} title={'Description*'} placeholder={'Tell something about you'}/>
+            <CreateSelect data={data} setData={setData} updatingObject={updatingObject} name={'social'} title={'Add Social Media'} options={socialMedia}/>
         </div>
     );
 }

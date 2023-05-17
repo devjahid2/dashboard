@@ -218,9 +218,22 @@ a.text-end{
  background-color: transparent;
  color: #9360FF;
 }
-
-
-
+.warn_text{
+  color:#706781;
+  
+  font-weight: 600;
+  font-size:12px
+}
+.warn_wrap{
+  padding: 15px;
+  background: rgba(253, 74, 74, 0.1);
+}
+.text-active{
+  color:#9360FF !important
+}
+.fw-500{
+  font-weight: 500;
+}
 
 
 

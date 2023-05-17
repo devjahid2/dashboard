@@ -19,7 +19,7 @@ const cryptoData = [
     lockup_time: "30 Days",
     stacking_poll: false,
     // month/day/year
-    end_date: "5/2/2023",
+    end_date: "5/26/2023",
     type: "Soft/Hard",
     love: false,
     verify: [],

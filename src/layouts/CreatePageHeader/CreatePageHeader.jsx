@@ -6,7 +6,7 @@ import Ethereum from '../../components/ethereum/Ethereum';
 import Wallet from '../../components/wallet/Wallet';
 import CreateButton from '../../components/header/CreateButton';
 
-const CreatePageHeader = ({title,route}) => {
+const CreatePageHeader = ({title,route,middle}) => {
     const onSmallScreenMobile = useWindowWidth(1199);
     return (
         <div className="header position-relative">
@@ -15,7 +15,7 @@ const CreatePageHeader = ({title,route}) => {
         ) : (
           <div className="d-flex align-items-center justify-content-between pt-3">
             <Navigation
-              homeText={"Home / Launchpads "}
+              homeText={`Home / ${middle ? middle : 'Launchpad'} `}
               route={route}
             />
             <div className="d-flex align-items-center">
