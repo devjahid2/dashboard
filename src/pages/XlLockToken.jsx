@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../components/container/Container";
 import Header from "../layouts/Header/Header";
+import XlLockTokenBody from "../components/xlLockToken/XlLockTokenBody";
 
 const XlLockTokenPage = () => {
   const filterMenu = [
@@ -16,6 +17,7 @@ const XlLockTokenPage = () => {
         route={"Token"}
         middle={"XL-Lock"}
       />
+      <XlLockTokenBody/>
     </Container>
   );
 };

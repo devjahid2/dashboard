@@ -9,6 +9,8 @@ import PrivateSaleViewPage from '../pages/PrivateSaleView';
 import PrivateSalePage from '../pages/PrivateSalePage';
 import XlLockCReatePage from '../pages/Xl_LockCReate';
 import XlLockTokenPage from '../pages/XlLockToken';
+import AirdropCreatePage from '../pages/AirdropCreatePage';
+import BuyCryptoPage from '../pages/BuyCryptoPage';
 
 const AppRoutes = () => {
     return (
@@ -23,9 +25,12 @@ const AppRoutes = () => {
           <Route path ="/private-sale/view" element={<PrivateSaleViewPage/>}/>
           <Route path ="/xl-lock/create" element={<XlLockCReatePage/>}/>
           <Route path ="/xl-lock/token" element={<XlLockTokenPage/>}/>
+          <Route path ="/airdrop/create" element={<AirdropCreatePage/>}/>
+          <Route path='/buy-crypto' element={<BuyCryptoPage/>}/>
 
-          
 
+
+          <Route path ="/xl-lock/token/:id" element={<XlLockTokenPage/>}/>
           <Route path="/launchpad-view/:id" element={<LaunchpadDetailsPage/>}/>
           {/* <Route path="*" element={<NotFoundB/>} /> */}
         </Routes>

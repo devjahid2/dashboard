@@ -62,6 +62,12 @@ import bitkeep from "./Bitkeep.png";
 import continue_wallet from './continue_wallet.png'
 import wallet_loading from './wallet_loading.png'
 import warning from './warning.png'
+import sort_arrow from './sort-vertical.png'
+import filter_gray from './filter-gray.png'
+import xl_icon_1 from './xl-icon-1.png'
+import xl_icon_bg from './xl-icon-bg-1.png'
+import arrow_left from './arrow_left.png'
+import arrow_right from './arrow-right.png'
 export const icons = {
   home,
   airdrop,
@@ -126,5 +132,11 @@ export const icons = {
   bitkeep,
   continue_wallet,
   wallet_loading,
-  warning
+  warning,
+  sort_arrow,
+  filter_gray,
+  xl_icon_bg,
+  xl_icon_1,
+  arrow_left,
+  arrow_right
 };
