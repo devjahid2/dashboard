@@ -68,6 +68,7 @@ import xl_icon_1 from './xl-icon-1.png'
 import xl_icon_bg from './xl-icon-bg-1.png'
 import arrow_left from './arrow_left.png'
 import arrow_right from './arrow-right.png'
+import arbitrum from './arbitrum.png'
 export const icons = {
   home,
   airdrop,
@@ -138,5 +139,6 @@ export const icons = {
   xl_icon_bg,
   xl_icon_1,
   arrow_left,
-  arrow_right
+  arrow_right,
+  arbitrum
 };

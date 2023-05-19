@@ -260,6 +260,33 @@ table.xl-lock-token tbody tr:hover{
 box-shadow: 0px 17px 80px rgba(22, 6, 172, 0.04), 0px 7.10219px 33.4221px rgba(22, 6, 172, 0.0287542), 0px 3.79717px 17.869px rgba(22, 6, 172, 0.0238443), 0px 2.12866px 10.0172px rgba(22, 6, 172, 0.02), 0px 1.13052px 5.32008px rgba(22, 6, 172, 0.0161557), 0px 0.470434px 2.21381px rgba(22, 6, 172, 0.0112458);
 }
 
+.network_absolute{
+  max-width: 340px;
+  min-width: 340px;
+  top: -930px;
+  width: 100%;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  transition: .5s;
+}
+.network_absolute.active{
+  top: 53px;
+}
+.network_absolute li a{
+  color:#44414C;
+  padding: 10px;
+  display: block;
+  transition: .5s;
+}
+.network_absolute li a:hover,.network_absolute li.active a{
+  color:#ffffff;
+  background-color:#9360FF;
+}
+.network_absolute li a:hover img,.network_absolute li.active a img{
+  background-color:#fff;
+  padding: 8px 5px;
+}
 
 
 .single-pagination-item a{
